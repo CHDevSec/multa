@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Os links oficiais pra justificar ou pagar a multa eleitoral sem cair no golpe do falso TSE.">
+<title>Links da Multa Eleitoral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: uma coluna estreita de celular; botões grandes, um por link, e a checagem antes de pagar embaixo */
+:root {
+  --bg: #060606;
+  --panel: #121212;
+  --line: #2a2a2a;
+  --fg: #ffffff;
+  --muted: #a3a3a3;
+  --red: #fc0606;
+  --ok: #30d158;
+  --info: #409cff;
+  --sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.5;
+  padding-block: 32px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 480px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+.tag {
+  font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .12em;
+  color: var(--muted); text-transform: uppercase;
+}
+h1 { margin: 8px 0 10px; font-size: 32px; line-height: 1.1; font-weight: 800; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--red); }
+.lead { margin: 0; color: var(--muted); }
+.lead b { color: var(--fg); }
+.links { display: flex; flex-direction: column; gap: 12px; }
+.link {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 18px; min-height: 72px;
+  background: var(--panel); border: 2px solid var(--line); border-radius: 14px;
+  color: var(--fg); text-decoration: none;
+  transition: border-color .15s, transform .1s;
+}
+.link:hover { border-color: var(--fg); }
+.link:active { transform: translateY(1px); }
+.link:focus-visible { outline: 3px solid var(--info); outline-offset: 2px; }
+.glyph {
+  flex: none; width: 44px; height: 44px; border-radius: 10px;
+  display: grid; place-items: center;
+  font-family: var(--mono); font-weight: 700; font-size: 18px;
+  background: var(--fg); color: var(--bg);
+}
+.link-text { min-width: 0; display: flex; flex-direction: column; }
+.link-title { font-weight: 800; font-size: 18px; line-height: 1.25; }
+.link-host { font-family: var(--mono); font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.arrow { margin-left: auto; font-family: var(--mono); color: var(--muted); }
+section h2 { margin: 0 0 12px; font-size: 20px; font-weight: 800; }
+.check { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.check li { display: flex; gap: 12px; align-items: flex-start; }
+.check li::before {
+  content: "✓"; flex: none; width: 26px; height: 26px; margin-top: 1px; border-radius: 7px;
+  display: grid; place-items: center; font-weight: 800; font-size: 15px;
+  background: var(--ok); color: var(--bg);
+}
+.check code { font-family: var(--mono); font-size: 15px; }
+.alert {
+  border: 2px solid var(--red); border-radius: 14px; padding: 16px 18px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.alert strong { color: var(--red); font-size: 18px; }
+.alert p { margin: 0; }
+footer { font-family: var(--mono); font-size: 12px; color: var(--muted); line-height: 1.6; }
+footer b { color: var(--fg); }
+@media (prefers-reduced-motion: reduce) { .link { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="tag">Golpe do falso TSE</div>
+    <h1>Multa eleitoral: só nos <em>links oficiais</em></h1>
+    <p class="lead">Tem site falso cobrando <b>R$ 47,90</b> no Pix. A multa de verdade é de <b>até R$ 3,51 por turno</b>. Use só os caminhos abaixo.</p>
+  </header>
+
+  <nav class="links" aria-label="Links oficiais">
+    <a class="link" href="https://www.tse.jus.br/servicos-eleitorais/justificativa-eleitoral" target="_blank" rel="noopener">
+      <span class="glyph" aria-hidden="true">J</span>
+      <span class="link-text">
+        <span class="link-title">Justificar ausência (grátis)</span>
+        <span class="link-host">tse.jus.br</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="link" href="https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/posso-pagar-multa-eleitoral-com-pix-confira-os-meios-de-quitar-debitos-com-a-justica-eleitoral" target="_blank" rel="noopener">
+      <span class="glyph" aria-hidden="true">R$</span>
+      <span class="link-text">
+        <span class="link-title">Pagar a multa do jeito certo</span>
+        <span class="link-host">tse.jus.br</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="link" href="https://play.google.com/store/apps/details?id=br.jus.tse.eleitoral.etitulo" target="_blank" rel="noopener">
+      <span class="glyph" aria-hidden="true">▶</span>
+      <span class="link-text">
+        <span class="link-title">App e-Título no Android</span>
+        <span class="link-host">play.google.com</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="link" href="https://apps.apple.com/br/app/e-t%C3%ADtulo/id1320338088" target="_blank" rel="noopener">
+      <span class="glyph" aria-hidden="true"></span>
+      <span class="link-text">
+        <span class="link-title">App e-Título no iPhone</span>
+        <span class="link-host">apps.apple.com</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+  </nav>
+
+  <section>
+    <h2>Antes de pagar qualquer coisa</h2>
+    <ul class="check">
+      <li><span>O site termina em <code>.jus.br</code>?</span></li>
+      <li><span>O Pix vai pro <b>Tesouro Nacional</b> (GRU)?</span></li>
+      <li><span>O valor é de até <b>R$ 3,51 por turno</b>?</span></li>
+    </ul>
+  </section>
+
+  <div class="alert" role="note">
+    <strong>Já pagou no site falso?</strong>
+    <p>Chama teu banco pelo app agora, pede o <b>MED</b> (devolução do Pix) e faz o B.O.</p>
+  </div>
+
+  <footer>
+    Página da <b>CHDEVSEC</b>, não é site do governo. A Justiça Eleitoral não manda cobrança por SMS, WhatsApp ou e-mail.
+  </footer>
+</main>
+</body>
+</html>
